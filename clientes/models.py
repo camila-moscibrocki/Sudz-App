@@ -10,7 +10,7 @@ class Documento(models.Model):
 
 class Person(models.Model):
     razao_social = models.CharField(max_length=30)
-    cnpj = models.IntegerField()
+    CNPJ = models.IntegerField()
     area = models.CharField(max_length=30)
     bio = models.TextField()
     photo = models.ImageField(upload_to='clients_photos', null=True, blank=True)
